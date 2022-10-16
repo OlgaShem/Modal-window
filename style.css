@@ -1,0 +1,648 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Montserrat";
+}
+
+p {
+  margin-bottom: 0;
+}
+
+.wrap {
+  padding-left: 135px;
+  padding-right: 135px;
+}
+
+.header {
+  background-color: #2F54EB;
+  justify-content: space-between;
+}
+.header__link {
+  color: #fff;
+  font-size: 14px;
+  line-height: 20px;
+}
+.header__link:hover {
+  color: #fff;
+}
+.header__logo {
+  position: relative;
+}
+.header__logo::after {
+  content: "for homeowners";
+  position: absolute;
+  left: 0;
+  top: 35px;
+  text-transform: uppercase;
+  font-size: 10px;
+  line-height: 12px;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+}
+
+.logo {
+  font-size: 30px;
+  line-height: 36px;
+  color: #fff;
+  font-weight: 700;
+}
+.logo_dot {
+  color: #FA8C16;
+}
+
+.firstScreen {
+  padding-top: 70px;
+  padding-bottom: 101px;
+  background: #2F54EB;
+}
+.firstScreen__text {
+  flex: 1;
+  color: #fff;
+  margin-right: 24px;
+  margin-top: 14px;
+}
+.firstScreen__title {
+  font-size: 35px;
+  line-height: 48px;
+  font-weight: 600;
+}
+.firstScreen__title_green {
+  background: #52c41a;
+  border-radius: 5px;
+}
+.firstScreen__subtitle {
+  font-size: 23px;
+  line-height: 32px;
+  font-weight: 500;
+  margin-top: 30px;
+}
+.firstScreen__poster {
+  background-image: url("img/main.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 16px;
+  flex: 1;
+  position: relative;
+  min-height: 320px;
+}
+
+.asSeenBlock {
+  position: absolute;
+  right: 8px;
+  bottom: 8px;
+  background: #fff;
+  font-size: 11px;
+  line-height: 16px;
+  font-weight: 700;
+  align-items: center;
+  padding: 8px 16px;
+  border-radius: 8px;
+}
+.asSeenBlock__text {
+  margin: 0 5px 0 0;
+}
+
+.featuresList {
+  justify-content: space-between;
+  margin: 56px 0 48px 0;
+}
+.featuresList__item {
+  flex: 1;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  text-align: center;
+  max-width: 260px;
+}
+.featuresList__icon {
+  margin-bottom: 26px;
+}
+
+.gutterGuards {
+  text-align: center;
+  margin-bottom: 48px;
+  padding: 0 130px;
+}
+.gutterGuards__block {
+  background: #2F54EB;
+  color: #fff;
+  position: relative;
+  z-index: 0;
+  padding: 64px 0 95px;
+  border-radius: 24px;
+}
+.gutterGuards__block::before {
+  content: "";
+  background: url("img/house.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.2;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.gutterGuards__title {
+  font-size: 25px;
+  line-height: 36px;
+  font-weight: 700;
+}
+.gutterGuards__signboard {
+  background: #fff;
+  color: #000;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  padding: 8px;
+  max-width: 500px;
+  text-align: center;
+  border-radius: 8px;
+  margin-bottom: 16px;
+}
+
+.zipForm {
+  position: relative;
+  margin: 0 100px;
+  background: #fff;
+  color: #000;
+  border-radius: 16px;
+  z-index: 2;
+  margin-top: 32px;
+}
+.zipForm__content {
+  max-width: 320px;
+}
+.zipForm__title {
+  font-size: 23px;
+  line-height: 32px;
+}
+.zipForm__text {
+  color: #646464;
+  font-size: 14px;
+  text-align: left;
+}
+.zipForm__button {
+  margin-top: 14px;
+}
+
+.input {
+  font-size: 14px;
+  line-height: 17px;
+  background: #F5F6FE;
+  padding: 19px 16px;
+  border: none;
+  border-radius: 4px;
+  color: #000;
+  font-weight: 500;
+  width: 100%;
+  margin: 10px 0 8px 0;
+  outline: none;
+}
+.input:focus {
+  border: 1px solid #2F54EB;
+}
+
+.button {
+  background: #FA8C16;
+  color: #fff;
+  max-width: 500px;
+  width: 100%;
+  padding: 16px 0;
+  border: none;
+  border-radius: 4px;
+  outline: none;
+}
+.button:hover {
+  background: #F16E00;
+}
+.button:focus {
+  background: #F16E00;
+}
+.button:active {
+  border: none;
+}
+
+.footer {
+  background: #2F54EB;
+}
+.footer__wrap {
+  width: 50%;
+  text-align: center;
+  padding: 24px 0 50px 0;
+}
+.footer__menu {
+  list-style: none;
+  font-size: 12px;
+  line-height: 16px;
+  justify-content: space-between;
+  padding-top: 14px;
+}
+.footer__item {
+  color: #fff;
+  text-decoration: none;
+}
+.footer__item:hover {
+  color: #fff;
+}
+
+.formField {
+  min-width: 250px;
+  margin: 0;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}
+
+.modalContent {
+  background-color: #fefefe;
+  padding-top: 25px;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.close {
+  position: absolute;
+  right: 30px;
+  width: 21px;
+  height: 21px;
+  cursor: pointer;
+}
+
+input[type=radio] {
+  visibility: hidden;
+}
+
+.modalForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 96px;
+}
+.modalForm__button {
+  width: auto;
+  padding: 16px 24px;
+  border-radius: 4px;
+  display: flex;
+  margin: 0 auto;
+}
+.modalForm__safe {
+  margin-top: 10px;
+}
+.modalForm__inputs {
+  margin: 20px 0 30px;
+}
+.modalForm__safe {
+  margin-top: 16px;
+  font-size: 14px;
+}
+
+h3 {
+  font-size: 25px;
+  line-height: 36px;
+  font-weight: 700;
+}
+
+.answerGroup {
+  display: flex;
+  margin-top: 24px;
+}
+
+.answer {
+  border: 2px solid #F5F6FE;
+  border-radius: 16px;
+  margin-right: 16px;
+  padding: 20px;
+}
+.answer:hover {
+  border: 2px solid #FA8C16;
+}
+.answer:focus {
+  border: 2px solid #FA8C16;
+}
+
+.variant {
+  font-weight: 700;
+  color: #646464;
+}
+
+.second {
+  display: none;
+  -webkit-animation: 0.3s show;
+          animation: 0.3s show;
+}
+@-webkit-keyframes show {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100;
+  }
+}
+@keyframes show {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100;
+  }
+}
+
+.hide {
+  display: block;
+  -webkit-animation: 2s hide;
+          animation: 2s hide;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+@-webkit-keyframes hide {
+  from {
+    opacity: 100%;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@keyframes hide {
+  from {
+    opacity: 100%;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.progress {
+  margin-top: 45px;
+  height: 4px;
+  background: #F5F6FE;
+}
+
+.progressBar {
+  background: #52c41a;
+  height: 4px;
+  -webkit-animation: 0.4s grow1;
+          animation: 0.4s grow1;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+@-webkit-keyframes grow1 {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 50%;
+  }
+}
+@keyframes grow1 {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 50%;
+  }
+}
+
+.grow {
+  -webkit-animation: 0.4s grow;
+          animation: 0.4s grow;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+@-webkit-keyframes grow {
+  from {
+    width: 50%;
+  }
+  to {
+    width: 100%;
+  }
+}
+@keyframes grow {
+  from {
+    width: 50%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.error {
+  border: 1px solid #BB0000;
+}
+
+.errorText {
+  color: #BB0000;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: left;
+  padding-left: 16px;
+  margin: 5px 0 10px 0;
+}
+
+@media only screen and (max-width: 1024px) {
+  .wrap {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+  .gutterGuards {
+    padding: 0 40px;
+  }
+  .footer__wrap {
+    width: 80%;
+  }
+  .modalForm {
+    margin-top: 24px;
+    padding: 0 16px;
+  }
+  .modalForm__title {
+    text-align: center;
+    font-size: 23px;
+    line-height: 32px;
+    max-width: 350px;
+  }
+  .modalForm__button {
+    width: 100%;
+    margin: 0;
+    justify-content: center;
+  }
+  .modalForm .input {
+    margin: 0;
+  }
+  .modalForm__inputs {
+    margin: 20px 0 30px;
+  }
+  .answerGroup {
+    flex-direction: column;
+    width: 100%;
+    margin: 10px 0;
+  }
+  .answer {
+    padding: 16px 0 6px 20px;
+    margin-bottom: 8px;
+    margin-right: 0;
+  }
+  .answer__icon {
+    height: 40px;
+  }
+  .answer:last-child {
+    margin-bottom: 0;
+  }
+}
+@media only screen and (max-width: 658px) {
+  .wrap {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .logo {
+    font-size: 24px;
+    line-height: 29px;
+    text-align: left;
+  }
+  .header__logo::after {
+    font-size: 9px;
+    line-height: 10px;
+    top: 30px;
+  }
+  .firstScreen {
+    padding-top: 0;
+    padding-bottom: 52px;
+  }
+  .firstScreen__title {
+    font-size: 23px;
+    line-height: 28px;
+  }
+  .firstScreen__subtitle {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    margin-top: 20px;
+  }
+  .firstScreen__text {
+    margin: 0;
+    padding-top: 28px;
+  }
+  .firstScreen__poster {
+    min-height: 200px;
+  }
+  .asSeenBlock {
+    padding: 4px;
+  }
+  .gutterGuards {
+    margin-top: 140px;
+    padding: 0;
+  }
+  .gutterGuards__block {
+    padding: 24px 24px 50px;
+  }
+  .gutterGuards__block::before {
+    display: none;
+  }
+  .gutterGuards__title {
+    text-align: left;
+  }
+  .gutterGuards__signboard {
+    position: absolute;
+    top: -88px;
+    background: #F5F6FE;
+    border: 1px solid #FA8C16;
+    text-align: left;
+    display: flex;
+    align-items: flex-start;
+    left: 24px;
+    width: 88%;
+  }
+  .gutterGuards__icon {
+    margin-right: 10px;
+  }
+  .zipForm {
+    margin: 20px 0 0 0;
+  }
+  .zipForm__title {
+    font-size: 22px;
+    font-weight: 500;
+  }
+  .zipForm__content {
+    padding: 24px 16px;
+  }
+  .zipForm__button {
+    margin-top: 14px;
+  }
+  .modalContent {
+    padding-top: 10px;
+  }
+  .footer__menu {
+    font-size: 14px;
+    line-height: 20px;
+    text-align: left;
+    padding-left: 0;
+  }
+  .footer__menu li {
+    padding-bottom: 16px;
+  }
+  .footer__wrap {
+    margin: 0;
+    width: 70%;
+    padding: 24px 16px 20px 16px;
+  }
+  .footer__logo {
+    font-size: 30px;
+  }
+  .featuresList {
+    margin: 50px 0 48px 0;
+  }
+  .featuresList__item {
+    display: flex;
+    text-align: left;
+    max-width: 90%;
+    align-items: center;
+    margin-bottom: 33px;
+  }
+  .featuresList p {
+    margin-bottom: 0;
+  }
+  .featuresList__icon {
+    margin-bottom: 0;
+    margin-right: 23px;
+  }
+  .featuresList__icon_stars {
+    margin-right: 5px;
+  }
+  .input {
+    margin: 5px 0 8px 0;
+  }
+  .close {
+    top: 17px;
+    right: 17px;
+  }
+  .modalForm__form {
+    width: 100%;
+    margin-top: 0;
+  }
+  .modalForm__inputs {
+    margin: 20px 0 16px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .zipForm__title {
+    font-size: 17px;
+  }
+  .gutterGuards {
+    margin-top: 130px;
+  }
+  .gutterGuards__signboard {
+    top: -105px;
+  }
+}/*# sourceMappingURL=style.css.map */

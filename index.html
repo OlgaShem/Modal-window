@@ -1,0 +1,153 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomeBuddy</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header container-fluid d-flex wrap pt-lg-3 pt-2">
+            <h2 class="header__logo logo">HomeBuddy<span class="logo_dot">.</span></h2>
+            <a href="#form" class="header__link pt-2">Link to form</a>
+        </div>
+    </header>
+    <main>
+        <div class="firstScreen container-fluid d-lg-flex wrap">
+            <div class="firstScreen__text">
+                <h1 class="firstScreen__title">How 
+                    <span class="firstScreen__title_green">Over 410,000 Americans</span> 
+                    Increased Their Property Value 
+                    <span class="firstScreen__title_green">In Under 6 Hours*</span> 
+                    With This Simple Upgrade.
+                </h1>
+                <h3 class="firstScreen__subtitle">
+                    Ideal for detached and semi-detached homes with sloped roofs. 
+                </h3>
+            </div>
+            <div class="firstScreen__poster">
+                <div class="asSeenBlock d-flex">
+                    <p class="asSeenBlock__text">As seen on</p>
+                    <a href="https://google.com" class="asSeenBlock__link">
+                        <img src="img/nbc.svg" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="featuresList d-sm-flex wrap">
+            <div class="featuresList__item">
+                <img src="img/icon-1.svg" alt="" class="featuresList__icon">
+                <p>Lifetime warranty with 100% no-clog guarantee</p>
+            </div>
+            <div class="featuresList__item">
+                <img src="img/icon-2.svg" alt="" class="featuresList__icon">
+                <p>Fits most homes</p>
+            </div>
+            <div class="featuresList__item">
+                <img src="img/icon-3.svg" alt="" class="featuresList__icon">
+            <p>Installs over existing gutters saving you thousands</p>
+            </div>
+            <div class="featuresList__item">
+                <img src="img/icon-4.svg" alt="" class="featuresList__icon">
+                <div><img src="img/stars.svg" class="featuresList__icon_stars"></div>
+                <p>Сustomer rating </p>
+            </div>
+        </div>
+
+        <div class="gutterGuards">
+            <div class="gutterGuards__block">
+                <div class="gutterGuards__signboard mx-auto">
+                    <img src="img/form-icon.svg" alt="" class="gutterGuards__icon">
+                    <span>You will be surprised how affordable gutter guards are!</span>
+                </div>
+                <h3 class="gutterGuards__title">See How Much Gutter Guards Cost In The XX, XXX Area</h3>
+                <form class="zipForm pt-lg-5 pb-lg-5 pb-sm-5 pt-sm-5" id="form">
+                    <div class="zipForm__content mx-auto">
+                        <h3 class="zipForm__title">What is your ZIP Code?</h3>
+                        <input class="input" placeholder="Enter ZIP Code" name="code">
+                        <div class="zipForm__errorText errorText"></div>
+                        <p class="zipForm__text">Free, no-obligation estimates.</p>
+                        <button class="zipForm__button button" type="button">Get estimate</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <div id="modal" class="modal">
+        <div class="modalContent">
+            <img src="img/close.svg" alt="" class="close">
+            <div class="progress ">
+                <div class="progressBar" role="progressbar" aria-valuemin="0" aria-valuemax="10"></div>
+            </div>
+            <div class="first modalForm">
+                <h3 class="modalForm__title">Are you homeowner or authrized to make property changes?</h3>
+                <div class="answerGroup">
+                    <div class="answer">
+                        <label for="yes"><img src="img/yes.svg" alt="" class="answer__icon">
+                            <input type="radio" value="Yes" id="yes" name="radio">
+                            Yes
+                        </label>
+                    </div>
+                    <div class="answer">
+                        <label for="no"><img src="img/no.svg" alt="" class="answer__icon">
+                            <input type="radio" value="No" id="no" name="radio">
+                            No
+                        </label>
+                    </div>
+                </div>
+                <div class="answerGroup__errorText errorText"></div>
+                <button class="modalForm__button button next">Next</button>
+            </div>
+
+            <div class="second modalForm">
+                <h3 class="modalForm__title">Who should I prepare this estimate for?</h3>
+                <span>Your choice: <span class="variant"></span></span>
+                <form onsubmit="return validate();" class="modalForm__form">
+                    <div class="modalForm__inputs">
+                        <input type="text" name="name" class="input formField" placeholder="Full name">
+                        <div class="errorText errorName"></div>
+                        <input type="text" name="email" class="input formField" placeholder="Email address">
+                        <div class="errorText errorEmail"></div>
+                    </div>
+                    <button type="submit" class="modalForm__button button end">
+                        Next
+                    </button>
+                </form>
+                <span class="modalForm__safe"><img src="img/safe.svg" alt=""> Safe, Secure and Confidential</span>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer__wrap mx-lg-auto mx-md-auto">
+            <h2 class="footer__logo logo">HomeBuddy<span class="logo_dot">.</span></h2>
+            <nav>
+                <ul class="footer__menu d-lg-flex d-sm-block">
+                    <li>
+                        <a href="" class="footer__item">Terms of Use</a>  
+                    </li>
+                    <li>
+                        <a href="" class="footer__item">Privacy Policy</a>
+                    </li>
+                    <li>
+                        <a href="" class="footer__item"> Cookie Policy</a>
+                    </li>
+                    <li>
+                        <a href="" class="footer__item">Do Not Sell My Personal Information</a>
+                    </li>
+                    <li>
+                        <a href="" class="footer__item">Contact us</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
